@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+      body{
+    background-image: url("/night-landscape-1920x1200-10260.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.nav1{
+    font-size: 2rem;
+}
+nav{
+    display: grid;
+    padding: 40px;
+    grid-template-columns: 4fr 4fr 4fr;
+}
+.nav2{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+}
+.nav3 {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+nav button{
+    background-color:rgba(250, 245, 245, 0.8);
+    padding: 4px;
+    width: 90%;
+    border-radius: 20px;
+    border: none;
+}
+form{
+    margin-top: 3%;
+    text-align: center;
+    align-items: center;
+}
+ form input{
+    background-color: rgba(250, 245, 245, 0.4);
+    border: none;
+    padding:10px ;
+    width: 40%;
+    border-radius: 20px;
+    margin-bottom: 2%;
+}
+form input::placeholder{
+    color: white;
+}
+.forget{
+    font-size: small;
+    margin-left: 34%;
+    margin-top: 3%;
+}
+form button{
+    width: 41%;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+
+}
+      form{
+     margin-left: 13%;
+    box-shadow: 25px 24px 27px black;
+        background-color: rgba(0,0,0,0.5);
+        width: 70%;
+        padding-top: 1%;
+        padding-bottom: 4%;
+        border-top-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+        animation-name: form;
+        animation-delay:0s ;
+        animation-duration: 1s;
+        animation-direction: alternate-reverse;
+        
+      }
+      @keyframes form{
+        from{
+        width: 70%;
+        }
+        to{
+        width: 50%;
+        }
+
+      }
+      a{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+        .navlist:hover{
+          text-decoration: underline;
+        }
+        
+        a:hover{
+         color: white;
+          transition-duration: 0.4s;
+          font-size: 1rem;
+       
+         
+        }
+        
+        .navbutton1:hover{
+          color: white;
+          transition-duration: 0.4s;
+          font-size: 1rem;
+          background-color: rgba(25, 32, 236, 0.5);
+         
+        }
+        .navbutton2:hover{
+          color: white;
+          transition-duration: 0.4s;
+          font-size: 1rem;
+          background-color: rgba(25, 32, 236, 0.5);
+         
+        }
+       .nav1{
+        animation-name: ayush;
+        animation-duration: 2s;
+        
+       animation-direction: reverse;
+       }
+       @keyframes ayush{
+        from{
+          color: white; font-size: 2rem;
+        }
+        to{
+          color: yellowgreen; font-size: 1rem;
+        }
+       }
+
+    </style>
+    
+</head>
+<body>
+   <nav>
+    <div class="nav1">Ayush..</div>
+  <div class="nav2">
+    <div class="navlist">Home</div>
+    <div class="navlist">Blog</div>
+    <div class="navlist">Services</div>
+    <div class="navlist">About</div>
+  </div>
+    <div class="nav3">
+        <div><button class="navbutton1">Sign-In</button></div>
+    <div><button class="navbutton2"><a href="/Registrationpage.html">Sign-Up</a></button></div>
+    </div>
+   </nav> 
+   <form action="">
+   
+    <p>Don't have an account? <a href="/Registrationpage.html" style="color: white;">Sign-Up</a></p>
+    <h1>Login</h1>
+    <div class="main"><input type="email" name="Username" placeholder="  Username or Email"></div>
+  <div class="main">  <input type="password"name="password"  placeholder="Password"></div>
+    <button class="navbutton1"> Sign-In</button>
+    <div class="forget"><a href="/otp.html" style="color: white;">Forget password?</a></div>
+   </form>
+</body>
+</html>
