@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            color: white;
+            background-image: url("/night-landscape-1920x1200-10260.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        form{
+      columns: 2;
+       width: 70%;
+       padding: 20px;
+       padding-left: 10%;
+       margin-left: 120px;
+          color: white;
+          box-shadow: 25px 24px 27px black;
+          background-color: rgba(34, 27, 59, 0.454);
+          border-radius: 10px;
+          animation-name: form;
+          animation-duration: 2s;
+    
+        }
+        @keyframes form{
+            from{
+                width: 0px; background-color: transparent;
+            }
+            to{
+               width: 70%;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+       form div{
+        margin-bottom: 20px;
+       }
+       form input{
+        width: 40%;
+        padding: 8px;
+        margin-top: 2%;
+        background-color: rgba(255,255,255,0.5);
+        border-radius: 20px;
+        border: none;
+        animation-name: form;
+        animation-duration: 0.7s;
+       }
+       label{
+        animation-name: form;
+        animation-duration: 2s;
+       }
+       section{
+        padding-left: 30%;
+       }
+       .part2{
+        width: 80%;
+        padding-left: -20%;
+        
+    }
+    .part1{
+           width: 80%;
+           padding-left: -50%;
+        
+       }
+       input::placeholder{
+        color: white;
+       }
+      
+       #female{
+       width: 5%;
+       }
+      
+       #male{
+       width: 5%;
+       }
+       h1{
+        text-align: center;
+       }
+       p{
+        text-align: center;
+       }
+      
+       .signup{
+        margin-top: 20px;
+      
+        padding: 12px;
+        background-color: rgba(255,255,255,0.9);
+        font-size: 1.4rem;
+        font-weight: 400;
+        border: none;
+        border-radius: 10px;
+       }
+      .signup:hover{
+        background-color: blue;
+        transition-duration: 1s;
+      }
+      a:hover{
+        color: white;
+        transition-duration: 1s;
+
+      }
+    </style>
+</head>
+<body>
+    
+    <h1> Registration Form</h1>
+   
+<form action="">
+ 
+    
+   <div> 
+    <label for="name">First Name</label>
+    <div>
+    <input type="text" id="name" name="Name"> 
+</div>
+</div>
+
+   <div>
+     <label for="name">Last Name</label>
+     <div>
+
+         <input type="text" id="name" name="Name" >
+     </div>
+</div>
+    <div>
+         <label for="email">Email</label>
+         <div>
+             <input type="email" id="email" name="Email" >
+         </div>
+</div> 
+
+    <!-- <div>
+        <label for="password">Password</label>
+        <div>
+            <input type="password" >
+        </div>
+</div>
+<div>
+    <label for="confpassword">Confirm Password</label>
+    <div>
+        <input type="password" >
+    </div>
+
+</div> -->
+<div>
+    <label for="birthdate">D.O.B</label>
+    <div>
+        <input type="date" id="birthdate" name="D.O.B" >
+    </div>
+    
+</div>
+<div>
+    <label for="gender">Gender</label>
+    <div>
+       <label for="male">
+       <input type="radio" value="Male" name="gender" id="male">Male</label>
+       <label for="female">
+       <input type="radio" value="Female"  name="gender" id="female">Female</label>
+    </div>
+
+</div>
+
+
+<div>
+    <label for="resume">Resume</label>
+    <div>
+        <input type="file" id="resume" name="resume">
+    </div>
+
+</div>
+<!-- <div>
+    <label for="Rating"  >Rating</label>
+    <div>
+        <input type="range" id="Rating" name="Rating" >
+    </div>
+
+</div> -->
+<div>
+    <label for="time">Current time</label>
+    <div>
+        <input type="time" id="time" name="time">
+    </div>
+
+</div>
+<!-- <div>
+    <label for="url">URL Of Result</label>
+    <div>
+        <input type="url" name="url" id="url">
+    </div>
+
+</div> -->
+<div>
+    <label for="week">Week of submission</label>
+    <div>
+        <input type="week" id="week" name="Week">
+    </div>
+
+</div>
+
+<div>
+    <label for="subject">Subjects</label>
+    <div>
+        
+        <input type="listbox" list="options" size="50" name="subject" id="subject">
+        <datalist id="options">
+           <option > Maths</option>
+           <option > Science</option>
+           <option > Social Science</option>
+           <option > Computer</option>
+           <option > English</option>
+           <option > Hindi</option>
+        </datalist>
+
+    </div>
+</div>
+
+   <button class="signup"><a href="/thankyoupage.html">Submit</a></button>
+</form>
+</body>
+</html>
